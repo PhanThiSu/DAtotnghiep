@@ -1,0 +1,154 @@
+#tbody-requests .radio-wrapper {
+  width: 90px;
+  height: 30px!important;
+  position: relative;
+  margin: 6px auto;
+  border-radius: 20px;
+  background: gray;
+}
+#tbody-requests .radio-wrapper .status-toggle {
+  width: 36px;
+  height: 36px;
+  position: absolute;
+  left: 27px;
+  top: -3px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  border: 1px solid #ff6c00;
+  background: #ff8933;
+  box-shadow: 0 0 2px 1px #ff6c00 inset, 0 0 2px 1px #ff6c00;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+#tbody-requests .radio-wrapper label {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+  display: inline-block;
+  text-align: center;
+  line-height: 30px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  -webkit-animation: 6s rot-label ease-in-out infinite;
+  -moz-animation: 6s rot-label ease-in-out infinite;
+  -o-animation: 6s rot-label ease-in-out infinite;
+  animation: 6s rot-label ease-in-out infinite;
+}
+#tbody-requests .radio-wrapper input {
+  position: absolute;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+}
+
+#tbody-requests .radio-wrapper .yes_radio:checked {
+  background: red;
+}
+#tbody-requests .radio-wrapper .yes_radio:checked ~ .status-toggle {
+  border: 1px solid #ff3333;
+  background:  #ff3333;
+  box-shadow: 0 0 2px 1px #ff3333 inset, 0 0 2px 1px #ff3333;
+  left: -3px;
+}
+
+#tbody-requests .radio-wrapper .no_radio:checked {
+  background: red;
+}
+#tbody-requests .radio-wrapper .no_radio:checked ~ .status-toggle {
+  border: 1px solid #00b300;
+  background:#00b300;
+  box-shadow: 0 0 2px 1px #00b300 inset, 0 0 2px 1px #00b300;
+  left: 56px;
+}
+
+#tbody-requests .radio-wrapper .maybe_radio, 
+#tbody-requests .radio-wrapper .maybe-lbl {
+  left: 33.33333%;
+}
+
+#tbody-requests .radio-wrapper .no_radio, 
+#tbody-requests .radio-wrapper .no-lbl {
+  left: 66.66667%;
+}
+
+#tbody-requests .radio-wrapper .maybe-lbl {
+  -webkit-animation-delay: 2s;
+  -o-animation-delay: 2s;
+  -moz-animation-delay: 2s;
+  animation-delay: 2s;
+}
+
+#tbody-requests .radio-wrapper .no-lbl {
+  -webkit-animation-delay: 4s;
+  -o-animation-delay: 4s;
+  -moz-animation-delay: 4s;
+  animation-delay: 4s;
+}
+/*
+@-moz-keyframes rot-label {
+  0% {
+    transform: rotate(0deg);
+  }
+  15% {
+    transform: rotate(-400deg);
+  }
+  18% {
+    transform: rotate(-340deg);
+  }
+  20% {
+    transform: rotate(-360deg);
+  }
+  30% {
+    transform: rotate(-360deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+@-webkit-keyframes rot-label {
+  0% {
+    transform: rotate(0deg);
+  }
+  15% {
+    transform: rotate(-400deg);
+  }
+  18% {
+    transform: rotate(-340deg);
+  }
+  20% {
+    transform: rotate(-360deg);
+  }
+  30% {
+    transform: rotate(-360deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+@keyframes rot-label {
+  0% {
+    transform: rotate(0deg);
+  }
+  15% {
+    transform: rotate(-400deg);
+  }
+  18% {
+    transform: rotate(-340deg);
+  }
+  20% {
+    transform: rotate(-360deg);
+  }
+  30% {
+    transform: rotate(-360deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+*/

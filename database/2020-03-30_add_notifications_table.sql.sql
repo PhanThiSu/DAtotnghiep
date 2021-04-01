@@ -1,0 +1,1 @@
+CREATE TABLE `dqlinh_reportazmedia`.`notifications` ( `id` INT NOT NULL AUTO_INCREMENT , `user_id` INT NOT NULL , `title` VARCHAR(225) NOT NULL , `content` TEXT NOT NULL , `created` DATETIME NOT NULL , PRIMARY KEY (`id`), INDEX (`user_id`)) ENGINE = InnoDB;
