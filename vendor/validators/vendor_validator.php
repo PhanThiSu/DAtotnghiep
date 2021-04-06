@@ -10,7 +10,7 @@ trait vendor_validator {
 
 	public function requiredField($value) {
 		if(!strlen(trim($value)))
-			return ['status'=>false, 'message'=>"This field can not blank!"];
+			return ['status'=>false, 'message'=>"Trường này không được để trống"];
 		else return ['status'=>true];
 	}
 
@@ -53,7 +53,7 @@ trait vendor_validator {
 	public function numberField($value) {
 		if(is_numeric($value))
 			return ['status'=>true];
-		else return ['status'=>false, 'message'=>"The type of this field should be number!"];
+		else return ['status'=>false, 'message'=>"Trường này phải là số!"];
 	}
 
 	public function stringField($value) {

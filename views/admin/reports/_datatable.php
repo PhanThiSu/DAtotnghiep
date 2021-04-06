@@ -47,7 +47,7 @@
 							<th class="mobileHide" style="width: 150px;">Công việc</th>
 							<th class="webShow" style="width: 150px;">Nhóm</th>
 							<th class="webShow" style="width: 150px;">Ngày báo cáo</th>
-							<th style="width: 210px;">Hoạt động</th>
+							<th style="width: 210px;">Hành động</th>
 						</tr>
 					</thead>
 					<tbody id="tbody-reports" class="records">
@@ -109,13 +109,13 @@
 								<input type="checkbox" name="">
 							</th>
 							<th style="width: 20px;">ID</th>
-							<th style="width: 200px;">Fullname</th>
-							<th class="mobileHide" style="width: 100px;">Start - End</th>
-							<th style="width: 120px;">Work time</th>
-							<th class="mobileHide" style="width: 150px;">Job</th>
-							<th class="webShow" style="width: 150px;">Group</th>
-							<th class="webShow" style="width: 150px;">Date report</th>
-							<th style="width: 210px;">Action</th>
+							<th style="width: 200px;">Tên người dùng</th>
+							<th class="mobileHide" style="width: 100px;">Bắt đầu-Kết thúc</th>
+							<th style="width: 120px;">Thời gian làm việc</th>
+							<th class="mobileHide" style="width: 150px;">Công việc</th>
+							<th class="webShow" style="width: 150px;">Nhóm</th>
+							<th class="webShow" style="width: 150px;">Ngày báo cáo</th>
+							<th style="width: 210px;">Hành động</th>
 						</tr>
 	                </tfoot>
 				</table>

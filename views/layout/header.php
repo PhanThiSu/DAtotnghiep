@@ -25,14 +25,14 @@
             <li class="user-body">
               <div class="row">
                 <div class="col-xs-12 text-left dropdown-body">
-                  <a href="<?php echo vendor_app_util::url(array('ctl'=>'users', 'act'=>'profile')); ?>"></i>Profile</a>
+                  <a href="#"></i>Thông tin cá nhân</a>
                 </div>
                 <div class="col-xs-12 text-left dropdown-body">
-                  <a href="<?php echo vendor_app_util::url(array('ctl'=>'users', 'act'=>'changepass')); ?>"></i>Change Password</a>
+                  <a href="#"></i>Thay đổi mật khẩu</a>
                 </div>
                 <hr>
                 <div class="col-xs-12 text-left">
-                  <a href="<?php echo vendor_app_util::url(['ctl'=>'users','act'=>'logout']); ?>" class="btn btn-default btn-flat">Sign out</a>
+                  <a href="#" class="btn btn-default btn-flat">Đăng xuất</a>
                 </div>
               </div>
               <!-- /.row -->

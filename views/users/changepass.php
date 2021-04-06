@@ -1,7 +1,7 @@
 <?php include_once 'views/layout/'.$this->layout.'headerTop.php'; ?>
 <div class="login-box">
   <div class="login-logo">
-    <a href="javascript:void(0);"><b>TPM</b> Change password</a>
+    <a href="javascript:void(0);"><b>TPM</b> Thay đổi mật khẩu</a>
   </div>
   <!-- /.login-logo -->
   <div class="login-box-body">

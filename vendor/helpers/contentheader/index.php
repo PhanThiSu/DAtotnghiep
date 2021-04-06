@@ -1,6 +1,6 @@
 <section class="content-header">
   <h1> <?php echo $title; ?></h1>
-  <ol class="breadcrumb">
+  <!-- <ol class="breadcrumb">
     	<li><a href="<?php echo vendor_app_util::url(['ctl'=>'dashboard']); ?>"><i class="fa fa-dashboard"></i> Trang chủ</a></li>
 	<?php 
 	$c = count($breadcrumb);	$j = 0;
@@ -13,5 +13,5 @@
     		<?php if($c!=$j) { ?> </a> <?php } ?>
     	</li>
     <?php } ?>
-  </ol>
+  </ol> -->
 </section>

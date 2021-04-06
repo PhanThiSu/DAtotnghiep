@@ -87,7 +87,7 @@ class user_model extends vendor_frap_model
 	
 	public function profile(){
 		$email = ucfirst($_SESSION['user']['email']);
-		$sql = "SELECT * FROM `users` ORDER BY `users`.`firstname` ASC WHERE `email` = '".$email."'";
+		$sql = "SELECT * FROM `users`  WHERE `email` = '".$email."'";
 		$result = $this->con->query($sql);
 		if($result) {
 			$record = $result->fetch_assoc();

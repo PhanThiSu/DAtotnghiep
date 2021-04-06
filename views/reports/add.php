@@ -2,12 +2,12 @@
 <?php  
 	
 ?>
-<?php vendor_html_helper::contentheader('Reports <small>management</small>', [
+<?php vendor_html_helper::contentheader('Báo cáo công việc', [
     [
       'title' =>  'Index Reports',
-      'urlp'=>['ctl'=>$app['ctl']]
+      'urlp'=>['ctl'=>"Thêm báo cáo"]
     ],
-    ['urlp'  =>  ['ctl'=>$app['ctl'], 'act'=>$app['act']]]
+    ['urlp'  =>  ['ctl'=>"Thêm báo cáo", 'act'=>""]]
 ]); ?>
 
 <section class="content">

@@ -5,13 +5,13 @@ class reports_controller extends vendor_backend_controller
 
 	public function all() {
 		$rm = new report_model();
-		$this->records = $rm->allp('*',['joins'=>['user','gps']]);
+		$this->records = $rm->allp('*',['joins'=>['user','group']]);
 		$this->display();
 	}
 
 	public function index() {
 		$rm = new report_model();
-		$this->records = $rm->allp('*',['joins'=>['user','gps']]);
+		$this->records = $rm->allp('*',['joins'=>['user','group']]);
 		$this->display();
 	}
 

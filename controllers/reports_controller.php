@@ -5,7 +5,8 @@ class reports_controller extends vendor_auth_controller
 	public function index() {
 		$rm = new report_model();
 		$user_id = ucfirst($_SESSION['user']['id']);
-		$this->records = $rm->allp('*',['conditions'=>'reports.user_id = '.$user_id, 'joins'=>['user','gps']]);
+		$this->records = $rm->allp('*',['conditions'=>'reports.user_id = '.$user_id, 'joins'=>['user','group']]);
+		// exit(json_encode(		$this->records));
 		$this->display();
 	}
 

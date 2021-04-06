@@ -32,7 +32,7 @@ if(isset($app['prs']['status'])) {
 		    			</div>
 
 		    			<div class="col-sm-4 col-xs-6">
-							<button id="" class="btn btn-danger pull-right"> <!--id="delete-records cmt o day"-->
+							<button id="delete-records" class="btn btn-danger pull-right"> 
 									<i class="fa fa-remove"></i>
 								</button>
 		    				<a href="#" id="add-record" type = "button" class="btn btn-primary pull-right" >
@@ -107,8 +107,8 @@ if(isset($app['prs']['status'])) {
 						                  	<a href="<?php echo (vendor_app_util::url(["ctl"=>"users", "act"=>"edit/".$record['id']])) ?>" id="<?php echo("edit".$record['id']);?>" type="button" class="btn btn-primary edit-record">
 						                  		<i class="fa fa-edit"></i>
 						                  	</a>
-									        <button id="del<?php echo $record['id']; ?>" type="button" class="btn btn-danger " alt="<?php echo $record['id']; ?>"><i class="fa fa-remove"></i></button>
-											<!-- class="btn btn-danger del-record" cmt o day-->
+									        <button id="del<?php echo $record['id']; ?>" type="button" class="btn btn-danger del-record" alt="<?php echo $record['id']; ?>"><i class="fa fa-remove"></i></button>
+											
 						                  </td>
 						                </tr>
 						                <?php } ?>

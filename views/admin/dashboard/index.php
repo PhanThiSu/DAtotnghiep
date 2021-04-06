@@ -15,27 +15,27 @@
 <section class="content dashboard">
   <!-- Small boxes (Stat box) -->
   <div class="row">
-    <div class="col-lg-6 .col-md-6 .col-sm-12">
+    <!-- <div class="col-lg-6 .col-md-6 .col-sm-12"> -->
       <!-- small box -->
-      <div class="small-box bg-aqua small-dashboard">
+      <!-- <div class="small-box bg-aqua small-dashboard">
         <div class="inner">
           <h3 class="smallMobileHide"><a href="#"><?=$this->noUsers;?> New Orders</a></h3>
 
           <!-- <p><?=$this->noNonAdminActiveUsers;?> acctive users in <?=$this->noNonAdminUsers;?> users (non admin)</p> -->
           <!-- cmt câu trên -->
-        </div>
+        <!-- </div>
         <div class="icon">
           <i class="ion ion-person-add"></i>
         </div>
         <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
-      </div>
-    </div>
+      </div> -->
+    <!-- </div> -->
     <!-- ./col -->
     <div class="col-lg-6 .col-md-6 .col-sm-12">
       <!-- small box -->
       <div class="small-box bg-green  small-dashboard">
         <div class="inner">
-          <h3 class="smallMobileHide"><a class="daily" alt="today" href="#"> <?=$this->noUsersTodayReports;?> Bounce Rate</a></h3>
+          <h3 class="smallMobileHide"><a class="daily" alt="today" href="<?=vendor_app_util::url(array('ctl' => 'reports'));?>"> <?=$this->noUsersTodayReports;?> Nhân viên báo cáo hôm nay</a></h3>
 
           <!-- <p><a class="daily" alt="yesterday" href="<?=vendor_app_util::url(array('ctl' => 'reports', 'act' => 'usersreportyd'));?>"><?=$this->noUsersYesterdayReports;?> users reported yesterday</a> and <a class="daily" alt="yesterday" href="<?=vendor_app_util::url(array('ctl' => 'reports', 'act' => 'usersnotreportyd'));?>"><?=$this->noUsersYesterdayNotReports;?> users didn't report yesterday</a></p> -->
           <!-- cmt câu trên -->
@@ -43,28 +43,28 @@
         <div class="icon">
           <i class="ion ion-stats-bars"></i>
         </div>
-        <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+        <a href="<?=vendor_app_util::url(['ctl' => 'reports']);?>" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
       </div>
     </div>
     <!-- ./col -->
     <div class="col-lg-6 .col-md-6 .col-sm-12">
       <!-- small box -->
-      <!-- <div class="small-box bg-yellow small-dashboard">
+      <div class="small-box bg-yellow small-dashboard">
         <div class="inner">
-          <h3 class="smallMobileHide"><a  class="daily" alt="today" href="<?=vendor_app_util::url(['ctl' => 'requests', 'act' => 'daily']);?>"><?=$this->noTodayRequests;?> user off today</a></h3>
+          <h3 class="smallMobileHide"><a  class="daily" alt="today" href="#"><?=$this->noTodayRequests;?> Nhân viên xin nghỉ hôm nay</a></h3>
 
-           <p><a  class="daily" alt="today" href="<?=vendor_app_util::url(['ctl' => 'requests', 'act' => 'todayunprocess']);?>"><?=$this->noUnprocessRequestsToday;?> request unprocess today</a> & <a class="daily" alt="yesterday" href="<?=vendor_app_util::url(['ctl' => 'requests', 'act' => 'beforeunprocess']);?>">all <?=$this->noUnprocessRequestsBefore;?> request unprocess before </a></p>
+           <!-- <p><a  class="daily" alt="today" href="<?=vendor_app_util::url(['ctl' => 'requests', 'act' => 'todayunprocess']);?>"><?=$this->noUnprocessRequestsToday;?> request unprocess today</a> & <a class="daily" alt="yesterday" href="<?=vendor_app_util::url(['ctl' => 'requests', 'act' => 'beforeunprocess']);?>">all <?=$this->noUnprocessRequestsBefore;?> request unprocess before </a></p> -->
 
         </div>
         <div class="icon">
           <i class="ion ion-person-add"></i>
         </div>
-        <a href="<?=vendor_app_util::url(array('ctl' => 'requests'));?>" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
-      </div> -->
+        <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+      </div>
       <!-- cmt đoạn trên -->
     </div>
     <!-- ./col -->
-    <div class="col-lg-6 .col-md-6 .col-sm-12">
+    <!-- <div class="col-lg-6 .col-md-6 .col-sm-12"> -->
       <!-- small box -->
       <!-- <div class="small-box bg-red small-dashboard">
         <div class="inner">
@@ -81,7 +81,7 @@
     </div>
     <!-- ./col -->
     <!-- ./col -->
-    <div class="col-lg-6 .col-md-6 .col-sm-12">
+    <!-- <div class="col-lg-6 .col-md-6 .col-sm-12"> -->
       <!-- small box -->
       <!-- <div class="small-box small-dashboard" style="background-color: #ab8ce4 ">
         <div class="inner">

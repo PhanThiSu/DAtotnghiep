@@ -8,7 +8,7 @@
 	var nopp 		= parseInt(<?php echo $this->records['nopp']; ?>);
 </script>
 
-<?php vendor_html_helper::contentheader('Quản lý <small>báo cáo công việc</small>', [['urlp'=>['ctl'=>"", 'act'=>"Danh sách báo cáo"]]]); ?>
+<?php vendor_html_helper::contentheader('Quản lý báo cáo công việc', [['urlp'=>['ctl'=>"", 'act'=>"Danh sách báo cáo"]]]); ?>
 
 <section class="content">
 	<div class="row">
@@ -17,7 +17,7 @@
 			    <div class="box-header with-border">
 		    		<div class="row" id="reports-header">
 		    			<div class="col-sm-8 col-xs-6">
-			      			<h2 class="box-title">All reports</h2>
+			      			<!-- <h2 class="box-title">All reports</h2> -->
 		    			</div>
 
 		    			<div class="col-sm-4 col-xs-6">

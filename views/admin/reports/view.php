@@ -2,7 +2,7 @@
 <?php  
 	
 ?>
-<?php vendor_html_helper::contentheader('Reports <small>management</small>', [
+<?php vendor_html_helper::contentheader('Quản lý báo cáo công việc', [
     [
       'title' =>  'Index Reports',
       'urlp'=>['ctl'=>$app['ctl']]

@@ -70,7 +70,7 @@
 							<th class="webShow" style="width: 200px;">Công việc</th>
 							<th class="webShow" style="width: 150px;">Nhóm</th>
 							<th class="webShow" style="width: 150px;">Ngày báo cáo</th>
-							<th style="width: 200px;">Hành động</th>
+							<th style="width: 200px;">Hoạt động</th>
 						</tr>
 	                </tfoot>
 				</table>

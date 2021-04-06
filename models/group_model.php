@@ -1,6 +1,8 @@
 <?php
 class group_model extends  vendor_frap_model
 {
+	// protected $table = 'group';
+
 	public static $status = [
 						0 => 'Suggestion',
 						1 => 'Enable',

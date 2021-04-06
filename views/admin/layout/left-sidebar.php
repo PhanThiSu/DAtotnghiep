@@ -44,7 +44,7 @@
         </a>
         <ul class="treeview-menu">
           <li <?=($app['ctl']=='reports' && $app['act']=='index')? 'class="active"':'';?>><a href="<?=vendor_app_util::url(['ctl'=>'reports']); ?>"><i class="fa fa-list"></i> Danh sách báo cáo</a></li>
-          <li <?=($app['ctl']=='reports' && $app['act']=='add')? 'class="active"':'';?>><a href="#" ><i class="fa fa-plus"></i> Thêm báo cáo</a></li>
+          <li <?=($app['ctl']=='reports' && $app['act']=='add')? 'class="active"':'';?>><a href="<?=vendor_app_util::url(['ctl'=>'reports', 'act'=>'add']); ?>" ><i class="fa fa-plus"></i> Thêm báo cáo</a></li>
 
           <!-- <li class="treeview <?=($app['ctl']=='reports' && ($app['act']=='usersmonths' || $app['act']=='usersdays'|| $app['act']=='usersdate'))? 'active menu-open':'';?>">
             <a href="#"><i class="fa fa-circle-o"></i> Users're time<span class="text-danger">s</span> in... 
@@ -86,7 +86,7 @@
             <ul class="treeview-menu">
               <!-- <li <?=($app['ctl']=='reports' && $app['act']=='month')? 'class="active"':'';?>><a href="<?=vendor_app_util::url(array('ctl'=>'reports', 'act'=>'month')); ?>"><i class="fa fa-list"></i> Reports per month</a></li> -->
               <!-- <li <?=($app['ctl']=='reports' && $app['act']=='week')? 'class="active"':'';?>><a href="<?=vendor_app_util::url(array('ctl'=>'reports', 'act'=>'week')); ?>"><i class="fa fa-list"></i> Reports per week</a></li> -->
-              <li <?=($app['ctl']=='reports' && $app['act']=='daily')? 'class="active"':'';?>><a href="#"><i class="fa fa-list"></i> Báo cáo theo ngày</a></li>
+              <li <?=($app['ctl']=='reports' && $app['act']=='daily')? 'class="active"':'';?>><a href="<?=vendor_app_util::url(array('ctl'=>'reports', 'act'=>'daily')); ?>"><i class="fa fa-list"></i> Báo cáo theo ngày</a></li>
             </ul>
           </li>
         </ul>
@@ -99,8 +99,8 @@
           </span>
         </a>
         <ul class="treeview-menu">
-          <li><a href="#"><i class="fa fa-list"></i> Danh sách xin phép</a></li>
-          <li><a href="#"><i class="fa fa-plus"></i> Thêm xin phép</a></li>
+          <li><a href="<?=vendor_app_util::url(['ctl'=>'requests']); ?>"><i class="fa fa-list"></i> Danh sách xin phép</a></li>
+          <li><a href="<?=vendor_app_util::url(['ctl'=>'requests', 'act'=>'add']); ?>"><i class="fa fa-plus"></i> Thêm xin phép</a></li>
 
           <li class="treeview">
             <a href="#"><i class="fa fa-circle-o"></i> Danh sách phép trong ...

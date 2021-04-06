@@ -172,7 +172,7 @@ class vendor_mobiledetect_helper
         'Wiko'          => 'KITE 4G|HIGHWAY|GETAWAY|STAIRWAY|DARKSIDE|DARKFULL|DARKNIGHT|DARKMOON|SLIDE|WAX 4G|RAINBOW|BLOOM|SUNSET|GOA(?!nna)|LENNY|BARRY|IGGY|OZZY|CINK FIVE|CINK PEAX|CINK PEAX 2|CINK SLIM|CINK SLIM 2|CINK +|CINK KING|CINK PEAX|CINK SLIM|SUBLIM',
         'iMobile'        => 'i-mobile (IQ|i-STYLE|idea|ZAA|Hitz)',
         // Added simvalley mobile just for fun. They have some interesting devices.
-        // http://www.simvalley.fr/telephonie---gps-_22_telephonie-mobile_telephones_.html
+        // http://www.simvalley.fr/telephonie---group-_22_telephonie-mobile_telephones_.html
         'SimValley'     => '\b(SP-80|XT-930|SX-340|XT-930|SX-310|SP-360|SP60|SPT-800|SP-120|SPT-800|SP-140|SPX-5|SPX-8|SP-100|SPX-8|SPX-12)\b',
          // Wolfgang - a brand that is sold by Aldi supermarkets.
          // http://www.wolfgangmobile.com/

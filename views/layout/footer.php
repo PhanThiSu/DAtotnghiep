@@ -37,7 +37,7 @@
               <div class="menu-info">
                 <h4 class="control-sidebar-subheading">Frodo Updated His Profile</h4>
 
-                <p>New phone +1(800)555-1234</p>
+                <p>New phone +84 0346151596</p>
               </div>
             </a>
           </li>

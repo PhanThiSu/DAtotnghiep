@@ -6,21 +6,29 @@
         <div class="box-body">
           <fieldset>
             <div id="legend">
-              <legend class=""><?php echo ucwords($app['act'].' '.$app['ctl']); ?></legend>
+              <!-- <legend class=""><?php echo ucwords($app['act'].' '.$app['ctl']); ?></legend> -->
+              <legend class="">
+              <?php  
+                if(ucwords($app['act'])==="Add")echo "Thêm báo cáo";
+                else if(ucwords($app['act'])==="Edit") echo "Sửa báo cáo";
+                else if(ucwords($app['act'])==="View") echo "Xem chi tiết";
+               ?>
+              
+              </legend>
             </div>
             <?php if($app['act'] != 'view') { ?>
               <form id="form-record" action="<?php echo vendor_app_util::url(["ctl"=>"reports", "act"=>$app['act'] == 'edit'?$app['act']."/".$this->record['id']:$app['act']]); ?>" method="post" enctype="multipart/form-data" class="form-horizontal">
             <?php } ?>
               <?php if(isset($this->errors) && $this->errors) { ?>
-                <div class="alert alert-danger  alert-dismissible fade in" role="alert"> 
+                <!-- <div class="alert alert-danger  alert-dismissible fade in" role="alert"> 
                   <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button> 
                   <h4>Oh snap! You got an error!</h4> 
                   <p><?=$this->errors['message'];?></p>
-                </div>
+                </div> -->
               <?php } ?>
                 <div class="form-group row group">
                   <!-- Status -->
-                  <label class="control-label col-md-3 col-lg-3" for="status">Nhóm</label>
+                  <label class="control-label col-md-3 col-lg-3" for="status">Nhóm(*)</label>
                   <div class="controls col-md-9 col-lg-7">
                     <?php if($app['act']=='view') { ?>
                       <input disabled type="text" id="input_group_id" name="report[group_id]" placeholder="" class="form-control" <?php echo (isset($this->record))? "value='".$this->record['groups_name']."'":""; ?>>
@@ -57,7 +65,7 @@
                 </div>
 
                 <div class="form-group row">
-                  <label class="control-label col-md-3 col-lg-3" for="time_start">Thời gian bắt đầu:</label>
+                  <label class="control-label col-md-3 col-lg-3" for="time_start">Thời gian bắt đầu</label>
                   <div class="controls col-md-9 col-lg-7 bootstrap-timepicker timepicker">
                     <input type="text" <?php if($app['act']=='view') echo "disabled"; ?> id="time_start" name="report[time_start]" placeholder="" class="form-control timepicker" <?php echo (isset($this->record))? "value='".date("H:i", strtotime($this->record['time_start']))."'":""; ?>>
                     <?php if( isset($this->errors['inputForm']['time_start'])) { ?>
@@ -79,7 +87,7 @@
              
                 <div class="form-group row">
                   <!-- First Name -->
-                  <label class="control-label col-md-3 col-lg-3" for="time_end">Thời gian kết thúc:</label>
+                  <label class="control-label col-md-3 col-lg-3" for="time_end">Thời gian kết thúc</label>
                   <div class="controls col-md-9 col-lg-7 bootstrap-timepicker timepicker">
                     <input type="text" <?php if($app['act']=='view') echo "disabled"; ?> id="time_end" name="report[time_end]" placeholder="" class="form-control timepicker" <?php echo (isset($this->record))? "value='".date("H:i", strtotime($this->record['time_end']))."'":""; ?>>
                     <?php if( isset($this->errors['inputForm']['time_end'])) { ?>
@@ -90,7 +98,7 @@
                 
                 <div class="form-group row">
                   <!-- E-mail -->
-                  <label class="control-label col-md-3 col-lg-3" for="job">Công việc:</label>
+                  <label class="control-label col-md-3 col-lg-3" for="job">Công việc(*)</label>
                   <div class="controls col-md-9 col-lg-7">
                     <textarea <?php if($app['act']=='view') echo "disabled"; ?> id="job" name="report[job]" placeholder="Job..." class="form-control" value="<?php if(isset($this->record['job'])) echo($this->record['job']); ?>"><?php echo (isset($this->record))? " ".$this->record['job']." ":""; ?></textarea>
                     <?php if( isset($this->errors['inputForm']['job'])) { ?>
@@ -133,13 +141,13 @@
                   <div class="form-group row">
                     <div class="controls col-md-10">
                       <a href="<?php echo vendor_app_util::url(["ctl"=>"reports"]); ?>" class="btn btn-info cancelBtt pull-right">Hủy</a>
-                      <input class="btn btn-success pull-right" id="btn_add" type="submit" name="btn_submit"  value="<?php echo ucfirst($app['act']) ?>">
+                      <input class="btn btn-success pull-right" id="btn_add" type="submit" name="btn_submit"  value="Thêm"> <!--value="<?php echo ucfirst($app['act']) ?>"-->
                     </div>
                   </div>
                 <?php } else { ?>
                     <div class="form-group row">
                     <div class="controls col-md-10">
-                      <a href="<?php echo vendor_app_util::url(["ctl"=>"reports"]); ?>" class="btn btn-info cancelBtt pull-right">Hủy</a>
+                      <a href="<?php echo vendor_app_util::url(["ctl"=>"reports"]); ?>" class="btn btn-info cancelBtt pull-right">Đóng</a>
                     </div>
                   </div>
                 <?php } ?>
